@@ -1,0 +1,161 @@
+/* body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141516;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: rgb(196, 187, 187);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+}
+
+.heading {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 2rem 3rem;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+
+}
+
+#cityInput {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #eb5f5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: blue;
+}
+
+.weather{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.forecast {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h1{
+    margin-top: 3rem;
+}
+h2{
+    margin-top: 3rem;
+}
+
+#currentWeather {
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    color: blue;
+    
+}
+
+#forecastContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(99, 59, 59);
+    
+}
+
+.forecast-item {
+    width: calc(33.33% - 20px);
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 2rem;
+    
+}
+
+
+@media (max-width: 768px) {
+    .forecast-item {
+        width: 100%;
+    }
+}
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+/* ......................................................................................... */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: changeBackground 20s infinite;
+    transition: background-image 0.5s;
+    height: 100vh;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('/Images/cloudy.jpeg');
+    }
+    25% {
+        background-image: url('/Images/rainny.jpeg');
+    }
+    50% {
+        background-image: url('/Images/sunny.jpeg');
+    }
+    75% {
+        background-image: url('/Images/cloudy.jpeg');
+    }
+    100% {
+        background-image: url('/Images/night.jpeg');
+    }
+}
